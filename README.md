@@ -46,13 +46,13 @@ To ensure that a Agile methodology has been followed, the progress of this proje
 
 https://trello.com/b/Ko0VjPhl
 
-![Trello](trello.PNG)
+![Trello](trello.PNG) (Added once project completed)
 
 The Trello board is used a Scrum board. Scrum boards help make Backlog items more visible, while also showing all items that need to be completed in the most recent sprint. Scrum boards can be categorised to help seperate the workflow. This helps ensure a clear focus is present at all times of development. This Trello Board for this project is broken down into the following categories:
 
-    * Project Rrequirements
-    * Project Resources
-    * User Stories
+    * Project Requirements: These requirements are the bare minimum that the project must have, also known as Minimum Viable Project
+    * Project Resources: Links, tables and graphs relating to the project
+    * User Stories: User stories are statements which exist to showcase all the functionality of the application. By putting them into stories, they allow us to follow a step-by-step procedure to create each functionality.
     * TO be Completed
     * Currently being added
     * Testing
