@@ -44,4 +44,11 @@ https://trello.com/b/Ko0VjPhl
 
 ![Trello](trello.PNG)
 
-
+The Trello board is used a Scrum board. Scrum boards help make Backlog items more visible, while also showing all items that need to be completed in the most recent sprint. Scrum boards can be categorised to help seperate the workflow. This helps ensure a clear focus is present at all times of development. This Trello Board for this project is broken down into the following categories:
+    * Project Rrequirements
+    * Project Resources
+    * User Stories
+    * TO be Completed
+    * Currently being added
+    * Testing
+    * Successfully added
