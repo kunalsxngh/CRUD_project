@@ -27,4 +27,4 @@ Furthermore, user's will also be able to read other reviews, and as well as edit
 
 ## Database Structure
 
-![ERD][ERD.PNG]
+![ERD](ERD.PNG)
