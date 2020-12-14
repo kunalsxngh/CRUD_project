@@ -5,6 +5,8 @@ This project will thus allow my trainers to assess my capabilities with the tech
 
 ## Contents
 
+To be added once project completed
+
 ## Requirements
 The following requirements are also expected to be achieved alongside the aims of this project:
 * The use of a Trello Board(s) to prove an Agile methodology has been considered
