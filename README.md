@@ -3,6 +3,8 @@ The aim of this project is to create a fully functioning CRUD application, which
 
 This project will thus allow my trainers to assess my capabilities with the techonologies and methodologies I have been taught, as well as assessing my development against the SFIA.
 
+## Contents
+
 ## Requirements
 The following requirements are also expected to be achieved alongside the aims of this project:
 * The use of a Trello Board(s) to prove an Agile methodology has been considered
