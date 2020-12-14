@@ -12,10 +12,19 @@ The following requirements are also expected to be achieved alongside the aims o
 * The use of GitHub and Virtual machines hosted on the Google Cloud Platform, allowing for version control via a CI server.
 
 ## Game reviewing App
-To help me achieve the aims and requirements of this project, I will create a game reviewing web application where users are able to create, update, delete and finally read their reviews. User's will also be able to recomend similar games in their reviews, creating a relationship between games that already exist in the Database.
+To help me achieve the aims and requirements of this project, I will create a game reviewing web application.
 
 When the user attempts to create a review, he/she will be asked to input the following:
   * Title of the review
+  * Body of the review
+  * Other game recomendations
+  * Name of the author
+  * Rating out of 5
 
+Furthermore, user's will also be able to read other reviews, and as well as edit and delete their own reviews.
 
+# Design
 
+## Database Structure
+
+![ERD](ERD.PNG)
