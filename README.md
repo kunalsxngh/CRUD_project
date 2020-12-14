@@ -29,4 +29,15 @@ Furthermore, user's will also be able to read other reviews, and as well as edit
 
 ![ERD](ERD.PNG)
 
-The ERD above showcases the relationships
+The ERD above showcases the relationships found in the databasse. A many-to-many relationship exists between Reviews and Games, achieved via the Recommendations table which acts as the association table. This relationship allows users to recommend multiple games, and multiple games can be recomended by a single review.
+
+## CI Pipeline
+
+To be completed when better understood.
+Keywords to include: Github, Jenkins, pytesdt, flask-app and systemctl, gunicorn
+
+# Project Tracking
+
+To ensure that a Agile methodology has been followed, the progress of this project was recorded and tracked on a Trello Board found in the link below:
+https://trello.com/b/Ko0VjPhl
+
