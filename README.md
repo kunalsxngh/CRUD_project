@@ -59,3 +59,6 @@ The Trello board is used a Scrum board. Scrum boards help make Backlog items mor
    * Successfully added: Aspects of the project that have successfully been added.
   
   # Risk Assessment
+A risk assessment was conducted before the start of the project as a tool for identifying and preventing potential project risks. However, unanticipated risks are expected as in any project, and so a final risk assessment is also conducted after the compeletion of the project to prevent any further risks. The risk assessment is completed in the table shown below:
+
+![RA1](ra1.PNG)
