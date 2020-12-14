@@ -53,7 +53,9 @@ The Trello board is used a Scrum board. Scrum boards help make Backlog items mor
    * Project Requirements: These requirements are the bare minimum that the project must have, also known as Minimum Viable Project
    * Project Resources: Links, tables and graphs relating to the project
    * User Stories: User stories are statements which exist to showcase all the functionality of the application. By putting them into stories, they allow us to follow a step-by-step procedure to create each functionality.
-   * TO be Completed
-   * Currently being added
-   * Testing
-   * Successfully added
+   * To be Completed: Aspects of the project that haven't been started
+   * Currently being added: Aspects that are currently being developed and added
+   * Testing: This list refers to all aspects of testing, that are yet to be completed
+   * Successfully added: Aspects of the project that have successfully been added.
+  
+  # Risk Assessment
