@@ -42,3 +42,6 @@ To ensure that a Agile methodology has been followed, the progress of this proje
 
 https://trello.com/b/Ko0VjPhl
 
+![Trello](trello.PNG)
+
+
