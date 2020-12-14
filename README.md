@@ -14,4 +14,8 @@ The following requirements are also expected to be achieved alongside the aims o
 ## Game reviewing App
 To help me achieve the aims and requirements of this project, I will create a game reviewing web application where users are able to create, update, delete and finally read their reviews. User's will also be able to recomend similar games in their reviews, creating a relationship between games that already exist in the Database.
 
+When the user attempts to create a review, he/she will be asked to input the following:
+  * Title of the review
+
+
 
