@@ -25,7 +25,6 @@ def create():
             )
             db.session.add(new_review)
             db.session.commit()
-
             new_review.recommendations.append(game)
             db.session.add(game)
             db.session.commit()
@@ -70,14 +69,14 @@ def updategame(id):
         return  redirect(url_for("home"))
     return render_template("updategame.html", form=form, title="Update Game", game = game)
 
-@app.route("/delete/<int:id>", methods=["GET", "POST"])
+@app.route("/delete/<int:id>")
 def delete(id):
     review = Reviews.query.filter_by(id=id).first()
     db.session.delete(review)
     db.session.commit()
     return  redirect(url_for("home"))
 
-@app.route("/deletegame/<int:id>", methods=["GET", "POST"])
+@app.route("/deletegame/<int:id>")
 def deletegame(id):
     game = Games.query.filter_by(id=id).first()
     db.session.delete(game)
