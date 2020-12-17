@@ -20,4 +20,20 @@
 
 {% endfor %}
 
+<h2>Games</h2>
+{% for game in all_games %}
+    <br><br>
+    {{ game.name }}
+    <br>
+    {{ game.genre }}
+    <br>
+    <form action="{{ url_for('updategame', id = game.id) }}">
+        <input type=submit value="Update">
+    </form>
+    <form action="{{ url_for('deletegame', id = game.id) }}">
+        <input type=submit value="Delete">
+    </form>
+    <br><br>
+
+{% endfor %}
 {% endblock body %}

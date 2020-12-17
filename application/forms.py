@@ -1,6 +1,9 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField
 from wtforms.validators import Length, NumberRange, InputRequired
+from wtforms.ext.sqlalchemy.fields import QuerySelectField
+from application.models import Reviews, Games
+
 
 class ReviewForm(FlaskForm):
     author = StringField('Author of the review',validators=[
@@ -14,6 +17,7 @@ class ReviewForm(FlaskForm):
     rating = IntegerField('Rating of the game (1-5)',validators=[
         InputRequired(),
         NumberRange(min=1, max=5)])
+    recommendations = QuerySelectField(query_factory=lambda: Games.query.all(), get_label="name")
 
     submit = SubmitField('Save review')
 
