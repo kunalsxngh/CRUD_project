@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> Games Review  {{ title }}</title>
+    </head>
+    <body>
+        <h1>Kunal's Games Review app - {{ title }} </h1>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('create') }}">Create Review</a>
+        <a href="{{ url_for('addgame') }}">Add a Game</a>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>
