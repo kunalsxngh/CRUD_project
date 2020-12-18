@@ -32,6 +32,8 @@ class TestBase(TestCase):
         test_review.recommendations.append(test_game)
         db.session.add(test_game)
         db.session.commit()
+        #app.config['TESTING'] = True
+        app.config['WTF_CSRF_ENABLED'] = False
 
     def tearDown(self):
         db.session.remove()
@@ -52,6 +54,10 @@ class TestViews(TestBase):
 
     def test_update_get(self):
         response = self.client.get(url_for('update', id=1))
+        self.assertEqual(response.status_code, 200)
+
+    def test_updategame_get(self):
+        response = self.client.get(url_for('updategame', id=1))
         self.assertEqual(response.status_code, 200)
 
     def test_delete_get(self):
@@ -77,9 +83,9 @@ class TestCreate(TestBase):
                 author="test create author",
                 body="test create body",
                 rating=4
-            ))
+            ),
         follow_redirects=True
-        
+        )
         self.assertIn(b"test create author", response.data)
         self.assertIn(b"test create body", response.data)
         self.assertIn(b"4", response.data)
@@ -90,9 +96,9 @@ class TestCreate(TestBase):
             data=dict(
                 name="test kunal",
                 genre="test genre",
-            ))
+            ),
         follow_redirects=True
-        
+        )
         self.assertIn(b"test kunal", response.data)
         self.assertIn(b"test genre", response.data)
 

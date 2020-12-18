@@ -7,3 +7,4 @@ lastfailed
 htmlcov/
 .cache/
 test.db
+.pyc

@@ -4,12 +4,15 @@
 <h2>Reviews</h2>
 {% for review in all_reviews %}
     <br><br>
+    Author: 
     {{ review.author }}
-    <br>
+    <br><br>
+    Review: 
     {{ review.body }}
-    <br>
+    <br><br>
+    Game Rating: 
     {{ review.rating }}
-    <br>
+    <hr>
     <form action="{{ url_for('update', id = review.id) }}">
         <input type=submit value="Update">
     </form>
@@ -23,8 +26,10 @@
 <h2>Games</h2>
 {% for game in all_games %}
     <br><br>
+    Game name: 
     {{ game.name }}
     <br>
+    Genre: 
     {{ game.genre }}
     <br>
     <form action="{{ url_for('updategame', id = game.id) }}">

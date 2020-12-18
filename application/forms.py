@@ -17,7 +17,7 @@ class ReviewForm(FlaskForm):
     rating = IntegerField('Rating of the game (1-5)',validators=[
         InputRequired(),
         NumberRange(min=1, max=5)])
-    recommendations = QuerySelectField(query_factory=lambda: Games.query.all(), get_label="name")
+    recommendations = QuerySelectField(query_factory=lambda: Games.query.all(), get_label="name", default = lambda: Games.query.first())
 
     submit = SubmitField('Save review')
 
