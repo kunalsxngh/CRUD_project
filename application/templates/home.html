@@ -12,6 +12,13 @@
     <br><br>
     Game Rating: 
     {{ review.rating }}
+    <br><br>
+    Game Recommendation:
+    {% for game in all_games %}
+    {% if game.id == review.game  %}
+    {{ game.name }}
+    {% endif %}
+    {% endfor %}
     <hr>
     <form action="{{ url_for('update', id = review.id) }}">
         <input type=submit value="Update">

@@ -21,12 +21,10 @@ def create():
             new_review = Reviews(
                 author=form.author.data,
                 body=form.body.data,
-                rating=form.rating.data
+                rating=form.rating.data,
+                game = game.id
             )
             db.session.add(new_review)
-            db.session.commit()
-            new_review.recommendations.append(game)
-            db.session.add(game)
             db.session.commit()
             return  redirect(url_for("home"))
     
@@ -66,6 +64,7 @@ def updategame(id):
     if request.method == "POST":
         game.name = form.name.data
         game.genre = form.genre.data
+        db.session.commit()
         return  redirect(url_for("home"))
     return render_template("updategame.html", form=form, title="Update Game", game = game)
 

@@ -4,7 +4,7 @@ from flask_testing import TestCase
 from flask_wtf import FlaskForm
 
 from application import app, db
-from application.models import Reviews, Games, recommendations_identifier
+from application.models import Reviews, Games
 
 class TestBase(TestCase):
     def create_app(self):
@@ -20,7 +20,8 @@ class TestBase(TestCase):
         test_review = Reviews(
             author="Test author",
             body="Test body",
-            rating = 5
+            rating = 5,
+            game = 1
         )
         db.session.add(test_review)
         db.session.commit()
@@ -29,10 +30,8 @@ class TestBase(TestCase):
             genre = "Test genre"
         )
         
-        test_review.recommendations.append(test_game)
         db.session.add(test_game)
         db.session.commit()
-        #app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
 
     def tearDown(self):
