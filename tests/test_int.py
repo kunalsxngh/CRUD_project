@@ -99,5 +99,7 @@ class TestReviewCreation(TestBase):
         assert test_review.body == "Updating the review"
         assert test_review.rating == 1
 
+
+###Add integration testing for deleting review, adding game and update/deleting game
 if __name__ == '__main__':
     unittest.main(port=5000)
