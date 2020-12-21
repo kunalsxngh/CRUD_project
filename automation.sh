@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash .sh
+bash .shgit
 sudo apt-get update
 sudo apt-get install python3 -y
 sudo apt-get install python3-venv -y
