@@ -15,7 +15,7 @@ def create():
     form = ReviewForm()
     if request.method == "POST":
         if form.validate_on_submit():
-            
+
             game_name = form.recommendations.data.name
             game = Games.query.filter_by(name=game_name).first()
             new_review = Reviews(
@@ -27,7 +27,7 @@ def create():
             db.session.add(new_review)
             db.session.commit()
             return  redirect(url_for("home"))
-    
+        
     return render_template('add.html', title="Create a task", form = form)
 
 @app.route("/addgame", methods=["GET", "POST"])

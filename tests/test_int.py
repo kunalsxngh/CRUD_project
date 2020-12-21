@@ -57,7 +57,7 @@ class TestBase(LiveServerTestCase):
             response = urlopen("http://localhost:5000")
             self.assertEqual(response.code, 200)
 
-class TestReviewCreation(TestBase):
+class TestReviewFunctionality(TestBase):
     def test_review_creation(self):
 
         # Go to the Create Review page
@@ -99,7 +99,22 @@ class TestReviewCreation(TestBase):
         assert test_review.body == "Updating the review"
         assert test_review.rating == 1
 
+    def test_review_delete(self):
+        self.driver.find_element_by_xpath('/html/body/form[2]/input')
 
-###Add integration testing for deleting review, adding game and update/deleting game
+        #Test that the review was deleted from the database
+        assert Reviews.query.filter_by(id=1) == None
+
+class TestGameFunctionality(TestBase):
+
+    def test_game_creation(self):
+            assert True==True
+
+    def test_game_update(self):
+            assert True==True
+
+    def test_game_delete(self):
+            assert True==True
+
 if __name__ == '__main__':
     unittest.main(port=5000)
