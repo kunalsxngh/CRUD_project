@@ -100,21 +100,49 @@ class TestReviewFunctionality(TestBase):
         assert test_review.rating == 1
 
     def test_review_delete(self):
-        self.driver.find_element_by_xpath('/html/body/form[2]/input')
+        self.driver.find_element_by_xpath('/html/body/form[2]/input').click()
 
         #Test that the review was deleted from the database
-        assert Reviews.query.filter_by(id=1) == None
+        assert Reviews.query.filter_by(id=1).scalar() is None
 
 class TestGameFunctionality(TestBase):
 
     def test_game_creation(self):
-            assert True==True
+        self.driver.find_element_by_xpath('/html/body/a[3]').click()
+        time.sleep(1)
+
+        self.driver.find_element_by_xpath('//*[@id="name"]').send_keys('new game')
+        self.driver.find_element_by_xpath('//*[@id="genre"]').send_keys('new genre')    
+        self.driver.find_element_by_xpath('//*[@id="submit"]').click()
+
+        time.sleep(1)
+
+        assert url_for('home') in self.driver.current_url
+
+
+        new_game = Games.query.filter_by(id=2).first()
+        assert new_game.name == "new game"
+        assert new_game.genre ==  "new genre"
 
     def test_game_update(self):
-            assert True==True
+
+        self.driver.find_element_by_xpath('/html/body/form[3]/input').click()
+
+        self.driver.find_element_by_xpath('//*[@id="name"]').send_keys('updating name')
+        self.driver.find_element_by_xpath('//*[@id="genre"]').send_keys('updating genre')
+
+        self.driver.find_element_by_xpath('//*[@id="submit"]').click()
+        
+        update_game = Games.query.filter_by(id=1).first()
+        assert update_game.name == "updating name"
+        assert update_game.genre ==  "updating genre"
+
 
     def test_game_delete(self):
-            assert True==True
+        self.driver.find_element_by_xpath('/html/body/form[4]/input').click()
+
+        assert Games.query.filter_by(id=1).scalar() is None
+        
 
 if __name__ == '__main__':
     unittest.main(port=5000)
