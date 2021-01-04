@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block body %}
+<br><br>
+
+Original Game name: {{ game.name}}
+<br>
+Original Game genre: {{ game.genre }}
+<br><br>
+
+<form action ='' method='POST'>
+
+    {{ form.hidden_tag() }}
+    {{ form.name.label  }} {{ form.name }} 
+    <br>
+    {{ form.genre.label }} {{form.genre }}
+    <br>
+    {{ form.submit }}
+    </form>
+{% endblock body %}
