@@ -50,7 +50,7 @@ To ensure that a Agile methodology has been followed, the progress of this proje
 
 https://trello.com/b/Ko0VjPhl
 
-![Trello](Screenshots/trello.PNG) (Added once project completed)
+![Trello](Screenshots/trello.png) (Added once project completed)
 
 The Trello board is used as a Scrum board. Scrum boards help make Backlog items more visible, while also showing all items that need to be completed in the most recent sprint. Scrum boards can be categorised to help seperate the workflow. This helps ensure a clear focus is present at all times of development. This Trello Board for this project is broken down into the following categories:
 
