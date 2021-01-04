@@ -43,7 +43,7 @@ During the development of thep project, it was discovered that a Many to many re
 
 CI is the method of automating the integration of code changes from many developers into a single project. I have integrated this methodology via the use of various frameworks, as shown in the diagram below. 
 
-![CI pipeline](ci.png)
+![CI pipeline](Screenshots/ci.png)
 
 # Project Tracking
 
