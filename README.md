@@ -45,6 +45,8 @@ CI is the method of automating the integration of code changes from many develop
 
 ![CI pipeline](Screenshots/ci.png)
 
+In this pipeline, a developer can simply look at tasks to be completed on the Trello board, pull from the Repository to work on the code and then push once they are finished. This code is then automatically installed, tested and deployed via the Jenkins server. Any test failures/issues can be seen in the reports created
+
 # Project Tracking
 
 To ensure that a Agile methodology has been followed, the progress of this project was recorded and tracked on a Trello Board found in the link below:
@@ -83,3 +85,4 @@ Test coverage can be used as numerical.... Fortunately, PyTest allows for test r
 ![TestCoverage](Screenshots/UnitTestingCoverage.PNG)
 
   # Front-End
+As the purpose of this project was to create one with C.R.U.D Functionality, there was a lack of consideration towards HTML design and layout. 
