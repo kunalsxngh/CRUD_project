@@ -71,4 +71,4 @@ During development, some additional risk were discovered. These were then added 
   # Testing
 Testing was conducted via the use of PyTest, in conjunction with Flask-testing and Selenium. PyTest ensures the tests output a True or False value by "asserting" a specified condition. This conditions allow for a wide range of testing, from outputs in the program itself to changes in value in the tables in the database. These tests were then incorporated into Jenkins to allow for test automation. When Jenkins runs the tests, it also produces an output in the console, allowing for test reports to be seen.
 
-![TestCoverage](Sreenshots/UnitTestingCoverage.PNG)
+![TestCoverage](./Sreenshots/UnitTestingCoverage.PNG)
