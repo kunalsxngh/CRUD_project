@@ -31,9 +31,13 @@ Furthermore, user's will also be able to read other reviews, and as well as edit
 
 ## Database Structure
 
-![ERD](ERD.PNG)
+The ERD below showcases the relationships found in the databasse. A many-to-many relationship exists between Reviews and Games, achieved via the Recommendations table which acts as the association table. This relationship allows users to recommend multiple games, and multiple games can be recomended by a single review.
 
-The ERD above showcases the relationships found in the databasse. A many-to-many relationship exists between Reviews and Games, achieved via the Recommendations table which acts as the association table. This relationship allows users to recommend multiple games, and multiple games can be recomended by a single review.
+![ERD](Screenshots/ERD.PNG)
+
+During the development of thep project, it was discovered that a Many to many relationship was no necessary for the completion of the project. This made the recommendations table redudant, and so a diagram had to be constructed to showcase the entity relationships:
+
+![ERD2](Screenshots/ERD2.png)
 
 ## CI Pipeline
 
@@ -46,7 +50,7 @@ To ensure that a Agile methodology has been followed, the progress of this proje
 
 https://trello.com/b/Ko0VjPhl
 
-![Trello](trello.PNG) (Added once project completed)
+![Trello](Screenshots/trello.PNG) (Added once project completed)
 
 The Trello board is used as a Scrum board. Scrum boards help make Backlog items more visible, while also showing all items that need to be completed in the most recent sprint. Scrum boards can be categorised to help seperate the workflow. This helps ensure a clear focus is present at all times of development. This Trello Board for this project is broken down into the following categories:
 
@@ -61,10 +65,14 @@ The Trello board is used as a Scrum board. Scrum boards help make Backlog items 
   # Risk Assessment
 A [risk assessment](https://docs.google.com/spreadsheets/d/1rV_37JyttRklZ-s-0o_n9_5RRai0x6cwT8nH0TWXFfA/edit?usp=sharing) was conducted before the start of the project as a tool for identifying and preventing potential project risks. However, unanticipated risks are expected as in any project, and so a final risk assessment is also conducted after the compeletion of the project to prevent any further risks. The final risk assessment is shown below:
 
-![RA1](RA1.png)
+![RA1](Screenshots/RA1.png)
 
 During development, some additional risk were discovered. These were then added to the risk assessment so that they could be properly managed. These risks can be found in the risk assessment as the last two risks added.
   # Testing
 Testing was conducted via the use of PyTest, in conjunction with Flask-testing and Selenium. PyTest ensures the tests output a True or False value by "asserting" a specified condition. This conditions allow for a wide range of testing, from outputs in the program itself to changes in value in the tables in the database. These tests were then incorporated into Jenkins to allow for test automation. When Jenkins runs the tests, it also produces an output in the console, allowing for test reports to be seen.
 
-![TestCoverage](UnitTestingCoverage.PNG)
+![JenkinsReport](Screenshots/jenkinsReport.png)
+
+Test coverage can be used as numerical.... Fortunately, PyTest allows for test reports to incorporate test coverage too, as shown below:
+
+![TestCoverage](Screenshots/UnitTestingCoverage.PNG)
