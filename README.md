@@ -31,9 +31,13 @@ Furthermore, user's will also be able to read other reviews, and as well as edit
 
 ## Database Structure
 
+The ERD below showcases the relationships found in the databasse. A many-to-many relationship exists between Reviews and Games, achieved via the Recommendations table which acts as the association table. This relationship allows users to recommend multiple games, and multiple games can be recomended by a single review.
+
 ![ERD](Screenshots/ERD.PNG)
 
-The ERD above showcases the relationships found in the databasse. A many-to-many relationship exists between Reviews and Games, achieved via the Recommendations table which acts as the association table. This relationship allows users to recommend multiple games, and multiple games can be recomended by a single review.
+During the development of thep project, it was discovered that a Many to many relationship was no necessary for the completion of the project. This made the recommendations table redudant, and so a diagram had to be constructed to showcase the entity relationships:
+
+![ERD2](Screenshots/ERD2.PNG)
 
 ## CI Pipeline
 
