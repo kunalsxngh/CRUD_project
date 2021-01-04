@@ -46,7 +46,7 @@ To ensure that a Agile methodology has been followed, the progress of this proje
 
 https://trello.com/b/Ko0VjPhl
 
-![Trello](trello.PNG) (Added once project completed)
+![Trello](Screenshots/trello.PNG) (Added once project completed)
 
 The Trello board is used as a Scrum board. Scrum boards help make Backlog items more visible, while also showing all items that need to be completed in the most recent sprint. Scrum boards can be categorised to help seperate the workflow. This helps ensure a clear focus is present at all times of development. This Trello Board for this project is broken down into the following categories:
 
@@ -61,10 +61,10 @@ The Trello board is used as a Scrum board. Scrum boards help make Backlog items 
   # Risk Assessment
 A [risk assessment](https://docs.google.com/spreadsheets/d/1rV_37JyttRklZ-s-0o_n9_5RRai0x6cwT8nH0TWXFfA/edit?usp=sharing) was conducted before the start of the project as a tool for identifying and preventing potential project risks. However, unanticipated risks are expected as in any project, and so a final risk assessment is also conducted after the compeletion of the project to prevent any further risks. The final risk assessment is shown below:
 
-![RA1](RA1.png)
+![RA1](Screenshots/RA1.png)
 
 During development, some additional risk were discovered. These were then added to the risk assessment so that they could be properly managed. These risks can be found in the risk assessment as the last two risks added.
   # Testing
 Testing was conducted via the use of PyTest, in conjunction with Flask-testing and Selenium. PyTest ensures the tests output a True or False value by "asserting" a specified condition. This conditions allow for a wide range of testing, from outputs in the program itself to changes in value in the tables in the database. These tests were then incorporated into Jenkins to allow for test automation. When Jenkins runs the tests, it also produces an output in the console, allowing for test reports to be seen.
 
-![TestCoverage](UnitTestingCoverage.PNG)
+![TestCoverage](Sreenshots/UnitTestingCoverage.PNG)
