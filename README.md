@@ -69,6 +69,10 @@ A [risk assessment](https://docs.google.com/spreadsheets/d/1rV_37JyttRklZ-s-0o_n
 
 During development, some additional risk were discovered. These were then added to the risk assessment so that they could be properly managed. These risks can be found in the risk assessment as the last two risks added.
   # Testing
+Before any testing was undertaken, [analysis](https://docs.google.com/spreadsheets/d/1OfFZ9vwDHFIqsNnYMJ-dNl1Pc47DokX4H7gkPtnL4SU/edit?usp=sharing) of what needs to be tested was completed. This was done in the form of a table and can be seen below:
+
+![Test Report](Screenshots/testReport.png)
+
 Testing was conducted via the use of PyTest, in conjunction with Flask-testing and Selenium. PyTest ensures the tests output a True or False value by "asserting" a specified condition. This conditions allow for a wide range of testing, from outputs in the program itself to changes in value in the tables in the database. These tests were then incorporated into Jenkins to allow for test automation. When Jenkins runs the tests, it also produces an output in the console, allowing for test reports to be seen.
 
 ![JenkinsReport](Screenshots/jenkinsReport.png)
