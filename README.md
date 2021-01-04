@@ -37,7 +37,7 @@ The ERD below showcases the relationships found in the databasse. A many-to-many
 
 During the development of thep project, it was discovered that a Many to many relationship was no necessary for the completion of the project. This made the recommendations table redudant, and so a diagram had to be constructed to showcase the entity relationships:
 
-![ERD2](Screenshots/ERD2.PNG)
+![ERD2](Screenshots/ERD2.png)
 
 ## CI Pipeline
 
