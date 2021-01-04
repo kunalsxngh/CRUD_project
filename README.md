@@ -81,3 +81,5 @@ Testing was conducted via the use of PyTest, in conjunction with Flask-testing a
 Test coverage can be used as numerical.... Fortunately, PyTest allows for test reports to incorporate test coverage too, as shown below:
 
 ![TestCoverage](Screenshots/UnitTestingCoverage.PNG)
+
+  #Front-End
