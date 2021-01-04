@@ -31,7 +31,7 @@ Furthermore, user's will also be able to read other reviews, and as well as edit
 
 ## Database Structure
 
-![ERD](ERD.PNG)
+![ERD](Screenshots/ERD.PNG)
 
 The ERD above showcases the relationships found in the databasse. A many-to-many relationship exists between Reviews and Games, achieved via the Recommendations table which acts as the association table. This relationship allows users to recommend multiple games, and multiple games can be recomended by a single review.
 
