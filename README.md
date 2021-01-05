@@ -15,7 +15,7 @@ This project will thus allow my trainers to assess my capabilities with the tech
 * [Front-End](#Front-End)
 * [Improvements](#Improvements)
 * [Authors](#Authors)
-* [Contributors](#Contributors)
+* [Contributors](#Contributors)  
 
 
 
