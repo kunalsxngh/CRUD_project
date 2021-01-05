@@ -88,12 +88,12 @@ Test coverage can be used as numerical.... Fortunately, PyTest allows for test r
 As the purpose of this project was to create one with C.R.U.D Functionality, there was a lack of consideration towards HTML design and layout; This allowed for a website that was stable and bug-free.
 
 WHen the User first enters the website, they are greeted with the following home page:
-![Home Page](homepage.png)
+![Home Page](Screenshots/homepage.png)
 
 From here they are able to see the current reviews on site, as well as any games in the system that are able to be recommended in reviews. Each review shows the Author of the review, the review itself, the rating given to the gmae and as well as any game recommendations. At the top of the page is a navigation bar that can be seen on all other pages of the website too. This bar contains links to the home, Create Review and Add a Game websites.
 
 Next comes the Create review page, as shown below:
 
-![Create Review](reviewpage.png)
+![Create Review](Screenshots/reviewpage.png)
 
 Here the User can create a review by filling in the Correct forms. Flask Formn Validation is active on all fields so no field can be left empty. Once all the fields are filled out and the submit button is clicked, the User is taken back to the home page where they can view their review.
