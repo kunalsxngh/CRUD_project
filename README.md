@@ -109,6 +109,7 @@ Possible improvements:
    * Implement a Users table, and allow for User's to sign in and out.
       * This would allow for only the Authors of the review to be able to edit their reviews
    * Improved CSS designs throughout the site
+   * Currently the User is unable to add the name of the game they are reviewing, this could possibly be an addition in the future
     
   # Author
 
