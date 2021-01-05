@@ -10,6 +10,12 @@ This project will thus allow my trainers to assess my capabilities with the tech
   * [Database Structure](#Database-Structure)
   * [Continuous Integration Pipeline](#Continuous-Integration-Pipeline)
 * [Project Tracking](#Project-Tracking)
+* [Risk Assessment](#Risk-Assessment)
+* [Testing](#Testing)
+* [Front-End](#Front-End)
+* [Improvements](#Improvements)
+* [Authors](#Authors)
+* [Contributors](#Contributors)
 
 
 
