@@ -115,5 +115,5 @@ Possible improvements:
 Kunal Singh 
 
   # Contributors
-Harry Volker
+Harry Volker  
 Nathan Forester
