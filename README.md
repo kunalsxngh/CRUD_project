@@ -109,7 +109,7 @@ Next comes the Create review page, as shown below:
 
 ![Create Review](Screenshots/reviewpage.png)
 
-Here the User can create a review by filling in the correct fields. Flask Form Validation is active on all fields so no field can be left empty. Once all the fields are filled out and the submit button is clicked, the User is taken back to the home page where they can view their review.
+Here the User can create a review by filling in the correct fields. Flask Form Validation is active on all fields so no field can be left empty. The "Recommendations" drop down box is populated by the current games available in the database. Once all the fields are filled out and the submit button is clicked, the User is taken back to the home page where they can view their review.
 
 If the User wants to create a game in the database, they are shown the following page:
 
