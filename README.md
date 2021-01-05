@@ -4,8 +4,15 @@ The aim of this project is to create a fully functioning CRUD application, which
 This project will thus allow my trainers to assess my capabilities with the techonologies and methodologies I have been taught, as well as assessing my development against the SFIA.
 
 ## Contents
+* [Requirements](#Requirements)
+* [Game Reviewing App](#Game-Reviewing-App)
+* [Design](#Design)
+  * [Database Structure](#Database-Structure)
+  * [Continuous Integration Pipeline](#Continuous-Integration-Pipeline)
+* [Project Tracking](#Project-Tracking)
 
-To be added once project completed
+
+
 
 ## Requirements
 The following requirements are also expected to be achieved alongside the aims of this project:
@@ -15,7 +22,7 @@ The following requirements are also expected to be achieved alongside the aims o
 * The use of flask  to help create a functioniong website
 * The use of GitHub and Virtual machines hosted on the Google Cloud Platform, allowing for version control via a CI server.
 
-## Game reviewing App
+## Game Reviewing App
 To help me achieve the aims and requirements of this project, I will create a game reviewing web application.
 
 When the user attempts to create a review, he/she will be asked to input the following:
@@ -39,9 +46,9 @@ During the development of thep project, it was discovered that a Many to many re
 
 ![ERD2](Screenshots/ERD2.png)
 
-## Continuous Integration (CI) Pipeline
+## Continuous Integration Pipeline
 
-CI is the method of automating the integration of code changes from many developers into a single project. I have integrated this methodology via the use of various frameworks, as shown in the diagram below. 
+Continuous Integration (CI) is the method of automating the integration of code changes from many developers into a single project. I have integrated this methodology via the use of various frameworks, as shown in the diagram below. 
 
 ![CI pipeline](Screenshots/ci.png)
 
