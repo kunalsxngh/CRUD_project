@@ -97,3 +97,20 @@ Next comes the Create review page, as shown below:
 ![Create Review](Screenshots/reviewpage.png)
 
 Here the User can create a review by filling in the Correct forms. Flask Formn Validation is active on all fields so no field can be left empty. Once all the fields are filled out and the submit button is clicked, the User is taken back to the home page where they can view their review.
+
+If the User wants to create a game in the database, they are shown the following page:
+
+![Create Game](Screenshots/gamepage.png)
+
+Again, Flask Form validation is active, and once the User clicks submit they are taken back to the home page once again where they can also view their new game. Games are all shown in a different section below the reviews. 
+
+  # Improvements
+Possible improvements:
+    * Implement a Users table, and allow for User's to sign in and out.
+     * This would allow for only the Authors of the review to be able to edit their reviews
+    * Improved CSS designs throughout the site
+    
+  # Authors
+  
+Kunal Singh
+Harry Volker
