@@ -87,7 +87,7 @@ Before any testing was undertaken, [analysis](https://docs.google.com/spreadshee
 
 ![Test Report](Screenshots/testReport.png)
   
-Testing was conducted via the use of PyTest, in conjunction with Flask-testing and Selenium. PyTest ensures the tests output a True or False value by "asserting" a specified condition. This conditions allow for a wide range of testing, from outputs in the program itself to changes in value in the tables in the database.  
+Testing was conducted via the use of PyTest, in conjunction with Flask-testing and Selenium. PyTest ensures the tests output a True or False value by "asserting" a specified condition. These conditions allow for a wide range of testing, from outputs in the program itself to changes in value in the tables in the database.  
 Flask Testing was used for unit testing, where each individual component of the website was tested, such as ensuring the correct redirectes were implemented and the correct data was being viewed on each site. Selenium was used for Integration testing as it allowed for the use of modules such as ChromiumDriver, which was able to replicate a virtual Chrome window to allow for the tests run. Integration tests focus on testing the integration between the Units of the website, such as creating a review, then updating it and deleting it all in one test.
 These tests were then incorporated into Jenkins to allow for test automation. When Jenkins runs the tests, it also produces an output in the console, allowing for test reports to be seen.  
 
