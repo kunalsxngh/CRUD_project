@@ -110,7 +110,10 @@ Possible improvements:
       * This would allow for only the Authors of the review to be able to edit their reviews
    * Improved CSS designs throughout the site
     
-  # Authors
-  
+  # Author
+
 Kunal Singh 
+
+  # Contributors
 Harry Volker
+Nathan Forester
