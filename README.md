@@ -107,7 +107,7 @@ Again, Flask Form validation is active, and once the User clicks submit they are
   # Improvements
 Possible improvements:
    * Implement a Users table, and allow for User's to sign in and out.
-    * This would allow for only the Authors of the review to be able to edit their reviews
+      * This would allow for only the Authors of the review to be able to edit their reviews
    * Improved CSS designs throughout the site
     
   # Authors
